@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        .signup-container {
+            max-width: 450px;
+            margin: 80px auto;
+            background-color: var(--bg-color2);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+
+        .signup-container h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: antiquewhite;
+        }
+
+        .signup-container label {
+            display: block;
+            margin-bottom: 5px;
+            color: #ccc;
+        }
+
+        .signup-container input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 8px;
+            background-color: var(--bg-color1);
+            color: antiquewhite;
+            font-size: 16px;
+        }
+
+        .signup-container input:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px var(--aqi-2);
+        }
+
+        .signup-container button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 25px;
+            background-color: antiquewhite;
+            color: var(--bg-color1);
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .signup-container button:hover {
+            background-color: crimson;
+        }
+
+        .signup-footer {
+            text-align: center;
+            margin-top: 15px;
+            color: #aaa;
+            font-size: 14px;
+        }
+
+        .signup-footer a {
+            color: var(--aqi-2);
+            text-decoration: none;
+        }
+
+        .signup-footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 480px) {
+            .signup-container {
+                margin: 40px 15px;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="signup-container card">
+        <h2>Create Account</h2>
+        <form id="loginForm">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="John Doe" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="you@example.com" required />
+
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Choose a username" required />
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Create a password" required />
+
+            <button type="submit">Sign Up</button>
+        </form>
+        <div class="signup-footer">
+            <p>Already have an account? <a href="index.html">Log in</a></p>
+        </div>
+    </div>
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            window.location.href="index.html";
+        });
+    </script>
+</body>
+</html>

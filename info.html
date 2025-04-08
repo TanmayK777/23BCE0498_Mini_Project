@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    b{
+        font-size: 18px;
+    }
+    .about-container {
+      max-width: 800px;
+      margin: 60px auto;
+      background-color: var(--bg-color2);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      color: antiquewhite;
+    }
+
+    .about-container h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: antiquewhite;
+    }
+
+    .about-container p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      color: #ccc;
+    }
+
+    .about-container ul {
+      list-style: disc;
+      padding-left: 20px;
+      color: #ccc;
+    }
+
+    .about-container a {
+      color: var(--aqi-2);
+      text-decoration: none;
+    }
+
+    .about-container a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .about-container {
+        margin: 30px 15px;
+        padding: 25px;
+      }
+
+      .about-container h1 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="about-container card">
+    <h1>About This Weather App</h1>
+    <p>
+      This Weather App is designed by me,<b>Tanmay Khambete(23BCE0498)</b> to provide users with real-time weather updates and detailed forecasts in a clean, intuitive, and responsive interface. Whether you're planning your day or checking air quality levels, this app gives you all the essential information in one place. It also uses a responsive design so that the website works on any device no matter the width.
+    </p>
+
+    <p>
+      <strong>Features include:</strong>
+    </p>
+    <ul>
+      <li>Live weather data by city or current location</li>
+      <li>Air quality index with easy-to-read color coding</li>
+      <li>Hourly and weekly forecasts</li>
+      <li>Sunrise and sunset times</li>
+      <li>Details about Humidty, Pressure, Visibility, Wind Speed and Feels Like</li>
+      <li>Responsive layout for all devices</li>
+      <br>
+    </ul>
+
+    <p>
+      <strong>Built with:</strong> HTML, CSS, JavaScript, and OpenWeatherMap API.
+    </p>
+
+    <p>
+      Created as a project for the course <em>Web Programming (BCSE203E)</em>. You can view the source code on 
+      <a href="https://github.com/yourusername/weather-app" target="_blank">GitHub</a>.
+    </p>
+
+    <p>
+      <a href="weatherapp.html">← Back to App</a>
+    </p>
+  </div>
+
+</body>
+</html>

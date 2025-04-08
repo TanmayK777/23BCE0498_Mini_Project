@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        .login-container {
+            max-width: 400px;
+            margin: 80px auto;
+            background-color: var(--bg-color2);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+
+        .login-container h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: antiquewhite;
+        }
+
+        .login-container label {
+            display: block;
+            margin-bottom: 5px;
+            color: #ccc;
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 8px;
+            background-color: var(--bg-color1);
+            color: antiquewhite;
+            font-size: 16px;
+        }
+
+        .login-container input:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px var(--aqi-2);
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 25px;
+            background-color: antiquewhite;
+            color: var(--bg-color1);
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .login-container button:hover {
+            background-color: crimson;
+        }
+
+        .login-footer {
+            text-align: center;
+            margin-top: 15px;
+            color: #aaa;
+            font-size: 14px;
+        }
+
+        .login-footer a {
+            color: var(--aqi-2);
+            text-decoration: none;
+        }
+
+        .login-footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 480px) {
+            .login-container {
+                margin: 40px 15px;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container card">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="username">Username or Email ID</label>
+            <input type="text" id="username" placeholder="Enter your username" required />
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password" required />
+
+            <button type="submit">Sign In</button>
+        </form>
+        <div class="login-footer">
+            <p>Forgot your password? <a href="passwordreset.html">Reset it</a></p>
+            <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+        </div>
+    </div>
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            window.location.href="weatherapp.html";
+        });
+    </script>
+</body>
+</html>
